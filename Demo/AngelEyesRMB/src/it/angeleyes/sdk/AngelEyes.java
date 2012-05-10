@@ -116,9 +116,9 @@ public class AngelEyes{
 		
 		HttpClient httpClient = new DefaultHttpClient();
 		httpClient.getParams().setParameter(CoreConnectionPNames.SO_TIMEOUT, 5000);
-		httpClient.getParams().setParameter(CoreConnectionPNames.CONNECTION_TIMEOUT, 30000);
+		httpClient.getParams().setParameter(CoreConnectionPNames.CONNECTION_TIMEOUT, 40000);
 		
-		HttpPost postRequst = new HttpPost("http://vm-192-168-21-113.shengyun.grandcloud.cn/identify.json");
+		HttpPost postRequst = new HttpPost("http://api.angeleyes.it/identify.json");
 		
 		HttpEntity requestEntity = createRequestEntity(image, r, rr, maxDrift, kpCount, scale);
 		
